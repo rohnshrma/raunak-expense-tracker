@@ -63,3 +63,22 @@ body {
  .add-expense button:active {
   box-shadow: none;
  }
+
+
+
+ .expense_box{
+  padding:1rem;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+ }
+ .expense_box .expense_name{
+  width:50%;
+ }
+ .expense_box .expense_name{
+  width:20%;
+ }
+ .expense_box:last-child{
+  border:0;
+ }
