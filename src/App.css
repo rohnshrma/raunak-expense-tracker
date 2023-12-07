@@ -26,7 +26,7 @@ body {
 
 
 /* add expense */
-.add-expense .form-group input {
+.add-expense .form-group input ,select{
   width: 90%;
   padding: 12px;
   border: none;

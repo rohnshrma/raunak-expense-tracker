@@ -16,6 +16,14 @@ function App() {
   }
 
 
+  const deleteExpenseHandler = (id)=>{
+    setExpenses((prevExpenses)=>{
+      return prevExpenses.filter((expense,index)=>{
+        return index !== id
+      })
+    })
+  }
+
   return (
     <div className="App c">
       <div className="app-header container">
@@ -23,7 +31,7 @@ function App() {
       </div>
       <AddExpense onAdd= {AddExpenseHandler} />
       <ExpenseHeader all_expenses={expenses} />
-<ExpenseList all_expenses={expenses}/>
+<ExpenseList all_expenses={expenses} onDelete={deleteExpenseHandler} />
 
 
     </div>

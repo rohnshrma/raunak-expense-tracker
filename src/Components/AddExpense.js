@@ -57,6 +57,18 @@ const AddExpense = (props) => {
                 <div className="form-group">
                     <input onChange={amountChangeHandler} type="number" placeholder='Enter Expense Amount...' />
                 </div>
+                {/* <div className="form-group">
+                <select name="category" class="form-control">
+                    <option>Categories</option>
+                    <option value="tranport">Transport</option>
+                    <option value="food">Food</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="others">Others</option>
+                  
+                </select>
+                </div> */}
                 <button type='submit'>Add Expense</button>
             </form>
         </div>
